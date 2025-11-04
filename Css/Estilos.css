@@ -42,12 +42,19 @@ header nav ul li a:hover {
     transform: scale(1.053);
     color: white;
     background-color: #0261a0;
-    padding: 10px 15px;
+    padding: 8px 15px;
     border-radius: 10px;
 }
 
 a:visited {
     color: rgb(8, 8, 8);
+}
+
+.btn-outline-success {
+  color: white;
+  border-color: #198754;
+  background-color: #198754;
+  transition: 0.3s;
 }
 
 h1 {
@@ -57,7 +64,7 @@ h1 {
 }
 
 main {
-    flex: 1; /* empuja el footer al fondo */
+    flex: 1; 
     text-align: center;
 }
 
@@ -66,11 +73,12 @@ main {
     align-items: center;
     justify-content: space-between;
     margin: 5rem;
-    gap: rem;
 }
 
 section .img-uno, .img-dos {
     border-radius: 20px;
+   
+    
 }
 
 .section-dos {
@@ -79,6 +87,7 @@ section .img-uno, .img-dos {
     align-items: center;
     margin: 5rem;
     justify-content: space-between;
+    
 }
 
 section p {
@@ -86,13 +95,14 @@ section p {
     width: 60%;
     text-align: justify;
     font-size: 1.3rem;
+    
 }
 
 .contenedor-tarjeta {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    margin: 4rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin: 3rem auto;
     justify-items: center;
 }
 
@@ -118,7 +128,7 @@ section p {
 }
 
 .contenedor-tarjeta h3 {
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 .contenedor-tarjeta p {
@@ -245,6 +255,95 @@ margin-top: 1rem;
     transition: transform 0.3s ease; 
 }
 
+
 .section-img img:hover {
-  transform: scale(1.05); /* efecto suave al pasar el mouse */
+  transform: scale(1.05);
+}
+
+
+@media screen  and (max-width: 768px ){
+    header{
+        flex-direction: column;
+    }
+
+    .navbar {
+    width: 100%;
+  }
+
+  .section-uno, .section-dos{
+    flex-direction: column;
+    align-items: center;
+    text-align:center ;
+    gap: 1rem;
+  }
+
+   .section-uno img, .section-dos img {
+    width: 50vh;
+    
+  }
+
+  .section-uno p, .section-dos p{
+    width: 90%;
+  }
+
+  .contenedor-tarjeta{
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin: 10px; 
+  }
+  .tarjeta{
+    padding: 1rem;
+   
+    
+  }
+
+  .tarjeta img{
+    width: 40px;
+  }
+
+
+  footer{
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+  .redes{
+    text-align: center;
+  }
+
+  footer ul li{
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1024px){
+
+.section-uno, .section-dos{
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem ;
+    }
+    
+    .section-uno p, .section-dos p {
+    font-size: 1.1rem;
+    max-width: 600px;
+    }
+
+  .contenedor-tarjeta {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin: 4rem;
+    }
+
+    footer {
+  
+  padding: 2rem 4rem;
+}
+
+footer ul li {
+  font-size: 1.1rem;
+}
 }
