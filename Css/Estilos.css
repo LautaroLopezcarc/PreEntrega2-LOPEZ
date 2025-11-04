@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F2F2F2;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0883C9;
+}
+
+.logo {
+    margin-left: 1rem;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 1rem;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 3px;
+    padding: 5px;
+    color: black;
+}
+
+header nav ul li a:hover {
+    transition: all 0.3s ease;
+    transform: scale(1.053);
+    color: white;
+    background-color: #0261a0;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+a:visited {
+    color: rgb(8, 8, 8);
+}
+
+h1 {
+    font-size: 2.3rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+main {
+    flex: 1; /* empuja el footer al fondo */
+    text-align: center;
+}
+
+.section-uno {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5rem;
+    gap: rem;
+}
+
+section .img-uno, .img-dos {
+    border-radius: 20px;
+}
+
+.section-dos {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin: 5rem;
+    justify-content: space-between;
+}
+
+section p {
+    line-height: 2;
+    width: 60%;
+    text-align: justify;
+    font-size: 1.3rem;
+}
+
+.contenedor-tarjeta {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin: 4rem;
+    justify-items: center;
+}
+
+.tarjeta {
+    width: 90%;
+    max-width: 300px;
+    border: none;
+    border-radius: 15px;
+    padding: 1.5rem;
+    background-color: #e3f2fd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+}
+
+.tarjeta img {
+    width: 20%;
+    margin-bottom: 0.5rem;
+}
+
+.contenedor-tarjeta h3 {
+    font-size: 4rem;
+}
+
+.contenedor-tarjeta p {
+    font-size: 1.5rem;
+}
+
+footer {
+    text-align: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    background-color: #E3F2FD;
+    padding: 1rem;
+}
+footer ul{
+     margin: 0;
+    padding: 0;
+    
+    
+}
+footer ul li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.9rem;
+}
+
+footer img{
+width: 30px;
+}
+
+h3{
+    font-size: 1.3rem;
+}
+
+/* formulario contacto */
+
+.form-contacto-container {
+    margin-top: 2rem; 
+}
+
+
+section .tabla {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.tabla div {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+input, textarea {
+    border-radius: 5px;
+    margin-left: 1rem;
+    padding: 1rem;
+}
+
+input[type="submit"] {
+    width: 9%;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* main contacto */
+
+.main-contacto {
+   
+    padding-top: 2rem;
+}
+
+/* quienes somos */
+
+.main-quienes-somos{
+   
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+
+}
+.section-quienes-somos-titulo{
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 1rem;
+}
+
+.section-text-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.section-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin: 2rem;
+}
+
+.section-img img{
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease; 
+}
+
+.section-img img:hover {
+  transform: scale(1.05); /* efecto suave al pasar el mouse */
+}
